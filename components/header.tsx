@@ -7,11 +7,14 @@ export function Header() {
         <Link href="/" className={`${styles.header__navLink} content-flex`}>
           Home
         </Link>
-        <Link href="about" className={`${styles.header__navLink} content-flex`}>
+        <Link
+          href="/about"
+          className={`${styles.header__navLink} content-flex`}
+        >
           Sobre mim
         </Link>
         <Link
-          href="helpme"
+          href="/helpme"
           className={`${styles.header__navLink} content-flex`}
         >
           Apoie

@@ -1,3 +1,11 @@
 .helpMe ul {
   padding-left: 24px;
 }
+.helpMe {
+  padding: 16px;
+}
+@media (min-width: 768px) {
+  .helpMe {
+    padding: 0;
+  }
+}
