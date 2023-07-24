@@ -1,0 +1,11 @@
+.post {
+  padding: 20px 16px;
+}
+
+.post__text {
+  padding: 8px 0;
+}
+
+.post__date {
+  color: var(--gray-900);
+}

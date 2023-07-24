@@ -1,0 +1,53 @@
+.aside {
+  max-height: 67rem;
+  padding: 32px 16px;
+  background-color: var(--black-800);
+  text-align: center;
+  border-radius: 16px;
+  margin: 0 32px 16px 16px;
+}
+
+.about__image {
+  height: calc(12rem + 4px);
+  width: calc(12rem + 4px);
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--gray-900);
+  margin-bottom: 8px;
+}
+
+.about__name {
+  font-weight: bold;
+}
+
+.about__stack {
+  font-style: italic;
+}
+
+.about__description {
+  padding: 32px 0;
+}
+
+.about__contact {
+  padding: 16px 0;
+}
+
+.socialMidia a {
+  color: var(--gray-900);
+}
+
+.socialMidia {
+  gap: 16px;
+  color: inherit;
+}
+
+.backToTop {
+  position: relative;
+  text-align: center;
+}
+
+.backToTop svg {
+  position: fixed;
+  bottom: 16px;
+  cursor: pointer;
+}

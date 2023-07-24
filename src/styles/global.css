@@ -1,8 +1,11 @@
 :root {
   --white-900: #ffffff;
+  --black-950: #121214;
   --black-900: #272727;
   --black-800: #2c2b2d;
   --gray-900: #828083;
+  --orange-900: #f65010;
+  --animation-duration: 0.2s;
 }
 
 * {
@@ -14,6 +17,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -32,7 +36,7 @@ button {
 }
 
 a {
-  color: inherit;
+  color: var(--orange-900);
   text-decoration: none;
 }
 
@@ -62,13 +66,64 @@ button {
 }
 
 .content {
-  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
 }
 
 .container__full {
-  display: flex;
+  width: 100%;
 }
 
 .underConstruction {
   height: 100vh;
+}
+
+.posts a {
+  color: inherit;
+}
+
+pre {
+  background: var(--black-950);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  width: fit-content;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-top: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+ol,
+ul {
+  margin-left: 16px;
+  padding-top: 16px;
+}
+
+li {
+  margin-top: 8px;
+}
+
+hr {
+  margin: 16px 0;
+  border: 1px solid var(--white-900);
 }

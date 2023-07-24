@@ -1,0 +1,23 @@
+.pagination {
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  list-style: none;
+}
+.pagination li a {
+  padding: 8px;
+  text-align: center;
+  border-radius: 8px;
+  background: var(--gray-700);
+  color: var(--white);
+  cursor: pointer;
+  transition: all var(--animation-duration);
+}
+
+.paginationPageActive {
+  background: var(--pink-500);
+}
+.paginationArrowDisabled {
+  opacity: 0;
+}

@@ -1,0 +1,20 @@
+.wrapper {
+  padding: 16px 16px 16px 0;
+}
+
+.posts__info {
+  padding: 8px 0;
+}
+
+.posts__info time,
+.posts__info .backToHome {
+  color: var(--gray-900);
+}
+
+.backToHome {
+  margin-right: auto;
+}
+
+.posts_item h1 {
+  padding-bottom: 32px;
+}
