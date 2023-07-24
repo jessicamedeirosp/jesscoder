@@ -63,10 +63,7 @@ export const getServerSideProps: GetServerSideProps = async ({
     };
   } catch (e) {
     return {
-      redirect: {
-        destination: "/error",
-        permanent: false,
-      },
+      props: { post: {} },
     };
   }
 };

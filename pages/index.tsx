@@ -74,10 +74,8 @@ export const getStaticProps: GetStaticProps = async () => {
     };
   } catch (e) {
     return {
-      redirect: {
-        destination: "/error",
-        permanent: false,
-      },
+      props: { posts: [] },
+      revalidate: 60, // segundos
     };
   }
 };
