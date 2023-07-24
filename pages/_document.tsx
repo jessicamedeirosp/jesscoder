@@ -21,6 +21,7 @@ export default function Document() {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9639699134903654"
           crossOrigin="anonymous"
         ></script>
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <body>
         <Main />
