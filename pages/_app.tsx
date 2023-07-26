@@ -6,6 +6,7 @@ import "../styles/global.css";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { pageview } from "../lib/gtag";
+import { Analytics } from "../components/analytics";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -33,6 +34,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <section className="adsense__footer content-flex content-flex-center">
         <Adsense dataAdSlot="3678792188" />
       </section>
+      <Analytics />
     </main>
   );
 }
