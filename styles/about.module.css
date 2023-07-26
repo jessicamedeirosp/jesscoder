@@ -12,6 +12,15 @@
   font-size: 1.6rem;
 }
 
+.about {
+  padding: 16px;
+}
+@media (min-width: 768px) {
+  .about {
+    padding: 16px 16px 16px 0;
+  }
+}
+
 .about__username {
   gap: 8px;
   flex-wrap: wrap;

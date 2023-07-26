@@ -1,5 +1,5 @@
 .wrapper {
-  padding: 16px 16px 16px 0;
+  padding: 16px;
 }
 
 .posts__info {
@@ -17,4 +17,10 @@
 
 .posts_item h1 {
   padding-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 16px 16px 16px 0;
+  }
 }
