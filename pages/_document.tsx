@@ -1,6 +1,4 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import { Header } from "../components/header";
-import { Aside } from "../components/aside";
 
 export default function Document() {
   return (
