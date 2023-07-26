@@ -11,7 +11,6 @@ import { getPrismicClient } from "../services/prismic";
 import Prismic from "@prismicio/client";
 import { RichText } from "prismic-dom";
 import { Pagination } from "../components/pagination";
-import { Adsense } from "../components/adsense";
 
 const Home: NextPage<PostsProps> = ({ posts }: PostsProps) => {
   const [currentItems, setCurrentItems] = useState([] as IPost[]);
@@ -22,7 +21,6 @@ const Home: NextPage<PostsProps> = ({ posts }: PostsProps) => {
         {currentItems.map((post) => (
           <Post post={post} key={post.slug} />
         ))}
-        <Adsense dataAdSlot="3678792188" />
       </div>
       <Pagination posts={posts} setCurrentItems={setCurrentItems} />
     </div>

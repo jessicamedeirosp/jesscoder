@@ -15,6 +15,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Adsense dataAdSlot="7566066303" />
         </section>
       </section>
+      <section className="adsense__footer content-flex content-flex-center">
+        <Adsense dataAdSlot="3678792188" />
+      </section>
     </main>
   );
 }
