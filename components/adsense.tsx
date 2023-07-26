@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import "dotenv/config";
 interface AdsenseProps {
   dataAdSlot: string;
 }
@@ -14,7 +15,7 @@ export function Adsense({ dataAdSlot }: AdsenseProps) {
       <ins
         className="adsbygoogle"
         style={{ display: "block" }}
-        data-ad-client=""
+        data-ad-client={process.env.NEXT_PUBLIC_CA_PUB}
         data-ad-slot={dataAdSlot}
         data-ad-format="auto"
         data-full-width-responsive="true"

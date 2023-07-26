@@ -1,10 +1,25 @@
+import { useEffect } from "react";
 import { Adsense } from "../components/adsense";
 import { Aside } from "../components/aside";
 import { Header } from "../components/header";
 import "../styles/global.css";
 import type { AppProps } from "next/app";
+import { useRouter } from "next/router";
+import { pageview } from "../lib/gtag";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url: string) => {
+      pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <main className="container__full">
       <Header />
