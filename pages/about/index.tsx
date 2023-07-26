@@ -22,7 +22,7 @@ export default function About() {
             Jéssica Medeiros <span className={styles.badge}>@jess.coder</span>
           </h1>
           <h2>
-            Frontend <i>(+9 anos)</i> | Backend <i>(+1 ano)</i>
+            Frontend <i>(9+ xp)</i> | Backend <i>(1+ xp)</i>
           </h2>
 
           <div className={`content-flex ${styles.badge__skills}`}>
