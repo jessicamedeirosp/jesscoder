@@ -89,12 +89,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## 🧙‍♂️ Autor
 
 <a href="https://www.linkedin.com/in/jessicamedeirospocarli/">
- <img style="border-radius: 50%;object-fit: cover" src="https://i.imgur.com/FGXFzCt.jpg" width="100px;" alt="" height="100px"/>
+ <img src="https://i.imgur.com/FGXFzCt.jpg" width="100px;" alt="" />
  <br />
  <sub><b>Jéssica Medeiros</b></sub></a>
  <br />
-
----
 
 ## 📝 Licença
 
