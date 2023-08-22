@@ -68,9 +68,24 @@ export default function HelpMe() {
         <li>
           Outras constribuições via PIX: jessicamedeirospocarli96@gmail.com
         </li>
-        {/* <li>Hospede seu site na     <a href="https://www.hostgator.com.br/" target="_blank">
-         utilizando o cupom 
-          </a></li> */}
+        <li>
+          Hospede seu site na{" "}
+          <a
+            href="https://www.hostgator.com.br/47849-77-3-32.html"
+            target="_blank"
+          >
+            Hostgator com 50% de desconto
+          </a>
+        </li>
+        <li>
+          Contrate uma vpn da{" "}
+          <a
+            href="https://www.hostgator.com.br/47849-13-3-12.html"
+            target="_blank"
+          >
+            Hostgator com 50% de desconto
+          </a>
+        </li>
       </ul>
       <hr />
       <h2>Compre livros através dos links abaixo</h2>
