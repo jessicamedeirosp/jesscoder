@@ -1,8 +1,5 @@
 .header {
   display: flex;
-  border-radius: 16px;
-  background: var(--black-800);
-  margin: 16px;
 }
 
 .header__nav {
@@ -11,7 +8,7 @@
 }
 
 .header__navLink {
-  padding: 16px 0;
+  padding: 32px 0;
   text-transform: uppercase;
   font-weight: 700;
   color: inherit;

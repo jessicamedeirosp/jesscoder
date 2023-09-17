@@ -9,10 +9,11 @@ import styles from "../../styles/posts.module.css";
 import Link from "next/link";
 import { PiArrowLeft } from "react-icons/pi";
 export default function Post({
+  theme,
   post: { title, updatedAt, content },
 }: PostProps) {
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${styles[theme]}`}>
       <div className={`${styles.posts__info} content-flex`}>
         <Link href="/" className={styles.backToHome}>
           <PiArrowLeft /> Voltar
@@ -20,7 +21,7 @@ export default function Post({
         {/* <span >2 min de leitura</span> */}
         <time>{updatedAt}</time>
       </div>
-      <article className={styles.posts_item}>
+      <article className={styles.posts__item}>
         <h1>{title}</h1>
         <div
           className={styles.postContent}

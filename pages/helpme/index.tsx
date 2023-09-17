@@ -1,7 +1,11 @@
 import styles from "../../styles/helpme.module.css";
-export default function HelpMe() {
+export interface HelpMeProps {
+  theme: string;
+}
+
+export default function HelpMe({ theme }: HelpMeProps) {
   return (
-    <div className={styles.helpMe}>
+    <div className={`${styles.helpMe} ${styles[theme]}`}>
       <h1>Apoie esse Projeto</h1>
       <p>
         Um projeto como o blog e o youtube exigem tempo, equipamento e equipe

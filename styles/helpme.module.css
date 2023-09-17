@@ -3,9 +3,13 @@
 }
 .helpMe {
   padding: 16px;
+  background-color: var(--white-900);
+}
+.helpMe.dark {
+  background-color: var(--black-900);
 }
 @media (min-width: 768px) {
   .helpMe {
-    padding: 0;
+    padding: 32px;
   }
 }

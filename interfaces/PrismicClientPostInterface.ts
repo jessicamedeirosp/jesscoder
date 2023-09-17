@@ -7,6 +7,7 @@ export type ResponseProps = {
 };
 
 export interface PostProps {
+  theme: string;
   post: {
     slug: string;
     title: string;

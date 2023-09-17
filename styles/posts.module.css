@@ -1,7 +1,11 @@
 .wrapper {
   padding: 16px;
+  background-color: var(--white-900);
 }
 
+.wrapper.dark {
+  background-color: var(--black-900);
+}
 .posts__info {
   padding: 8px 0;
 }
@@ -14,13 +18,21 @@
 .backToHome {
   margin-right: auto;
 }
-
-.posts_item h1 {
+.posts__item {
+  max-width: 1000px;
+  text-align: justify;
+  font-size: 2rem;
+}
+.post__item p {
+  line-height: 2.4rem;
+}
+.posts__item h1 {
+  text-align: left;
   padding-bottom: 32px;
 }
 
 @media (min-width: 768px) {
   .wrapper {
-    padding: 16px 16px 16px 0;
+    padding: 32px;
   }
 }
