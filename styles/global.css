@@ -8,6 +8,10 @@
   --gray-900: #828083;
   --blue-900: #152032;
   --orange-900: #f65010;
+  --green-800: #445964;
+  --green-100: #59e4a8;
+  --green-900: #1b2e33;
+  --yellow-100: #fdcc08;
   --animation-duration: 0.2s;
 }
 
@@ -100,10 +104,14 @@ button {
   display: flex;
   flex-direction: column;
 }
+.content.portfolio {
+  display: block;
+}
 
 @media (min-width: 768px) {
   .content {
     flex-direction: row;
+    justify-content: center;
   }
   .container__full {
     width: 100%;
@@ -168,4 +176,49 @@ hr {
   main .wrapper {
     padding: 32px;
   }
+}
+
+/* flex box */
+
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.align-center {
+  align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.left-auto {
+  margin-left: auto;
+}
+.right-auto {
+  margin-right: auto;
+}
+.gap-1 {
+  gap: 4px;
+}
+.gap-2 {
+  gap: 8px;
+}
+.gap-3 {
+  gap: 12px;
+}
+.gap-4 {
+  gap: 16px;
+}
+.gap-5 {
+  gap: 20px;
+}
+.gap-6 {
+  gap: 24px;
 }

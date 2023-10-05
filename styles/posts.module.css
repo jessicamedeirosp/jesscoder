@@ -19,7 +19,7 @@
   margin-right: auto;
 }
 .posts__item {
-  max-width: 1000px;
+  /* width: calc(100% - 360px); */
   text-align: justify;
   font-size: 2rem;
 }

@@ -11,6 +11,7 @@ import { pageview } from "../lib/gtag";
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const [theme, setTheme] = useState("light");
+  const [isPortfolio, setIsPortfolio] = useState(false);
   useEffect(() => {
     const handleRouteChange = (url: string) => {
       pageview(url);
@@ -26,10 +27,16 @@ function MyApp({ Component, pageProps }: AppProps) {
   }
   return (
     <main className={`container__full ${theme}`}>
-      <Header handlerTheme={handlerTheme} theme={theme} />
+      {!isPortfolio ? (
+        <Header handlerTheme={handlerTheme} theme={theme} />
+      ) : null}
       <section className="content">
-        <Aside />
-        <Component {...pageProps} theme={theme} />
+        {!isPortfolio ? <Aside /> : null}
+        <Component
+          {...pageProps}
+          theme={theme}
+          setIsPortfolio={setIsPortfolio}
+        />
         {/* <section className="aside__right content-flex content-flex-center-column">
           <Adsense dataAdSlot="7566066303" />
         </section> */}
