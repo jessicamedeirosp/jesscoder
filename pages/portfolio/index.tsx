@@ -94,9 +94,9 @@ export default function Portfolio({ setIsPortfolio }: PortfolioProps) {
                 O projeto foi desenvolvido utilizando as tecnologias Typescript,
                 Next.js, ReactJS e Prismic. Ele apresenta uma lista de artigos
                 com paginação, detalhamento individual de cada artigo, opção de
-                mudança de tema e páginas dedicadas a "Sobre Mim" e "Apoie".
-                Além disso, o design é totalmente responsivo, adaptando-se a
-                diversos dispositivos.
+                mudança de tema e páginas dedicadas a <b>Sobre Mim</b> e{" "}
+                <b>Apoie</b>. Além disso, o design é totalmente responsivo,
+                adaptando-se a diversos dispositivos.
                 <br />
                 <br />
                 <a href="https:/jesscoder.com.br">Site</a>
@@ -118,7 +118,7 @@ export default function Portfolio({ setIsPortfolio }: PortfolioProps) {
                 JessDoces é um sistema de catálogo de doces, onde o usuário
                 consegue explorar uma ampla variedade de doces e adicionar os
                 seus favoritos no carrinho de compras com apenas algum clique,
-                Depois, é só clicar em "finalizar pedido" que o pedido será
+                Depois, é só clicar em <b>finalizar pedido</b> que o pedido será
                 enviado via WhatsApp. O projeto é responsivo e foi desenvolvido
                 utilizando ReactJS, Typescript, Styles Components, Sass e Vite.
                 <br />
