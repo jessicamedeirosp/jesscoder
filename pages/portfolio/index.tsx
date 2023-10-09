@@ -9,6 +9,7 @@ import {
 import styles from "../../styles/portfolio.module.css";
 import Image from "next/image";
 import portfolioImage from "../../assets/p1.png";
+import skillImage from "../../assets/skills.svg";
 import portfolio2Image from "../../assets/p2.png";
 import portfolio3Image from "../../assets/p3.png";
 import perfilImage from "../../assets/perfil.jpeg";
@@ -71,11 +72,7 @@ export default function Portfolio({ setIsPortfolio }: PortfolioProps) {
           <div className={styles.container}>
             <h2>Minha Stack</h2>
             <p>Tecnologias que uso nos meus projetos</p>
-            <img
-              src="https://skillicons.dev/icons?i=html,css,js,typescript,react,nextjs,sass,nodejs,postgres"
-              height="80px"
-              alt=""
-            />
+            <Image src={skillImage} height={80} width={830} alt="" />
           </div>
         </section>
         <section
