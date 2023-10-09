@@ -20,7 +20,7 @@ export interface PortfolioProps {
 export default function Portfolio({ setIsPortfolio }: PortfolioProps) {
   useEffect(() => {
     setIsPortfolio(true);
-  }, []);
+  }, [setIsPortfolio]);
   return (
     <div>
       <header className={styles.container}>
