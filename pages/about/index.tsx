@@ -7,7 +7,7 @@ import {
 import styles from "../../styles/about.module.css";
 import Image from "next/image";
 import perfilImage from "../../assets/perfil.jpeg";
-import { Dispatch, SetStateAction } from "react";
+
 export interface AboutProps {
   theme: string;
 }

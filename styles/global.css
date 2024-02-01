@@ -13,6 +13,15 @@
   --green-900: #1b2e33;
   --yellow-100: #fdcc08;
   --animation-duration: 0.2s;
+
+  --lp-white-900: #fafafa;
+  --lp-white-800: #fff;
+  --lp-blue-900: #002d67;
+  --lp-blue-800: #065fd4;
+  --lp-black-900: #0f0f0f;
+  --lp-yellow-900: #ffb800;
+  --lp-green-900: #009416;
+  --lp-font-secundary: "Kalam", cursive;
 }
 
 * {

@@ -15,13 +15,13 @@ import portfolio3Image from "../../assets/p3.png";
 import perfilImage from "../../assets/perfil.jpeg";
 import { Dispatch, SetStateAction, useEffect } from "react";
 export interface PortfolioProps {
-  setIsPortfolio: Dispatch<SetStateAction<boolean>>;
+  setIsNoBlog: Dispatch<SetStateAction<boolean>>;
 }
 
-export default function Portfolio({ setIsPortfolio }: PortfolioProps) {
+export default function Portfolio({ setIsNoBlog }: PortfolioProps) {
   useEffect(() => {
-    setIsPortfolio(true);
-  }, [setIsPortfolio]);
+    setIsNoBlog(true);
+  }, [setIsNoBlog]);
   return (
     <div>
       <header className={styles.container}>

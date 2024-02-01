@@ -11,7 +11,7 @@ import { pageview } from "../lib/gtag";
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const [theme, setTheme] = useState("light");
-  const [isPortfolio, setIsPortfolio] = useState(false);
+  const [isNoBlog, setIsNoBlog] = useState(true);
   useEffect(() => {
     const handleRouteChange = (url: string) => {
       pageview(url);
@@ -26,26 +26,26 @@ function MyApp({ Component, pageProps }: AppProps) {
     setTheme(newTheme);
   }
   return (
-    <main className={`container__full ${theme}`}>
-      {!isPortfolio ? (
-        <Header handlerTheme={handlerTheme} theme={theme} />
-      ) : null}
-      <section className="content">
-        {!isPortfolio ? <Aside /> : null}
-        <Component
-          {...pageProps}
-          theme={theme}
-          setIsPortfolio={setIsPortfolio}
-        />
-        {/* <section className="aside__right content-flex content-flex-center-column">
+    <>
+      {isNoBlog ? (
+        <Component {...pageProps} setIsNoBlog={setIsNoBlog} />
+      ) : (
+        <main className={`container__full ${theme}`}>
+          <Header handlerTheme={handlerTheme} theme={theme} />
+          <section className="content">
+            <Aside />
+            <Component {...pageProps} theme={theme} setIsNoBlog={setIsNoBlog} />
+            {/* <section className="aside__right content-flex content-flex-center-column">
           <Adsense dataAdSlot="7566066303" />
         </section> */}
-      </section>
-      {/* <section className="adsense__footer content-flex content-flex-center">
+          </section>
+          {/* <section className="adsense__footer content-flex content-flex-center">
         <Adsense dataAdSlot="3678792188" />
       </section> */}
-      {/* <Analytics /> */}
-    </main>
+          {/* <Analytics /> */}
+        </main>
+      )}
+    </>
   );
 }
 
