@@ -88,10 +88,17 @@ export default function LP({ setIsNoBlog }: LPProps) {
             <iframe
               width="660"
               height="415"
+              src="https://www.youtube.com/embed/x6BnP1ksYFE?si=DXQK5HY7K4DBWa8N"
+              title="Minha Primeira Vaga tech"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
+            {/* <iframe
+              width="660"
+              height="415"
               src="https://www.youtube.com/embed/OmKpz-Wi2Zs?si=SmkFnosfwFfLwAuF"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            ></iframe>
+            ></iframe> */}
             <a
               href="https://pay.hotmart.com/X90322730L"
               className={styles.video__button}
