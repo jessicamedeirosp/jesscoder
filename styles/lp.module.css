@@ -55,6 +55,8 @@
   font-family: var(--lp-font-secundary);
   text-transform: uppercase;
   color: var(--lp-blue-900);
+  line-height: 25px;
+  height: 54px;
 }
 .video__button:hover {
   background: var(--lp-green-900);
@@ -79,6 +81,8 @@
   text-align: center;
   text-transform: capitalize;
   color: var(--lp-white-800);
+  display: flex;
+  align-items: center;
 }
 
 .aboutMe__container {

@@ -8,7 +8,6 @@ import {
   FaClock,
   FaPhone,
   FaBookOpen,
-  FaChevronDown,
 } from "react-icons/fa6";
 import styles from "../../styles/lp.module.css";
 import logoBrancoImage from "../../assets/logo-branco.png";
@@ -31,47 +30,38 @@ export default function LP({ setIsNoBlog }: LPProps) {
   const questions = [
     {
       name: "Pra quem é esse curso?",
-      icon: <FaChevronDown />,
       resp: " Destinado a qualquer pessoa que já possua habilidades técnicas em qualquer área de tecnologia.",
     },
     {
       name: "Para quem este curso não é indicado?",
-      icon: <FaChevronDown />,
       resp: "Este curso não é recomendado para aqueles que ainda não possuem habilidades técnicas.",
     },
     {
       name: "O curso é adequado para quem não é desenvolvedor?",
-      icon: <FaChevronDown />,
       resp: "Qualquer pessoa da área tech pode participar do curso, no entanto, se você é um desenvolvedor, há aulas específicas voltadas para sua área.",
     },
     {
       name: "Formas de pagamento",
-      icon: <FaChevronDown />,
       resp: "Oferecemos opções de pagamento via cartão de crédito, boleto ou Pix.",
     },
     {
       name: "Existe certificado?",
-      icon: <FaChevronDown />,
       resp: "Após a conclusão do curso, será fornecido um certificado.",
     },
     {
       name: "Existe garantia?",
-      icon: <FaChevronDown />,
       resp: "Sim, oferecemos uma garantia de 7 dias! Se você adquiriu o curso e percebeu que não atende às suas expectativas, basta solicitar o reembolso.",
     },
     {
       name: "Qual é o valor do curso?",
-      icon: <FaChevronDown />,
       resp: "Parcelado em 12x de R$ 29,99 ou pagamento à vista de R$ 359,88.",
     },
     {
       name: "Como faço para acessar o curso?",
-      icon: <FaChevronDown />,
       resp: "O acesso ao curso é realizado através da plataforma Hotmart, que dispõe de um site e um aplicativo, permitindo acesso de qualquer lugar.",
     },
     {
       name: "Todos os módulos estão disponíveis imediatamente ou serão liberados gradativamente?",
-      icon: <FaChevronDown />,
       resp: "Os módulos 1, 2 e 3 estarão disponíveis imediatamente após a compra, enquanto os módulos 4 e 5 serão disponibilizados na plataforma durante o primeiro trimestre de 2024.",
     },
   ];
@@ -91,6 +81,7 @@ export default function LP({ setIsNoBlog }: LPProps) {
               src="https://www.youtube.com/embed/x6BnP1ksYFE?si=DXQK5HY7K4DBWa8N"
               title="Minha Primeira Vaga tech"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
             ></iframe>
             {/* <iframe
               width="660"
@@ -138,7 +129,7 @@ export default function LP({ setIsNoBlog }: LPProps) {
             <li>Desenvolvedora Web a +9 anos</li>
             <li>Tecnóloga em Segurança da Informação</li>
             <li>Instrutora Full-Stack</li>
-            <li>Já Trabalho pra empresas as Hinode, Totvs e B8one</li>
+            <li>Já Trabalhou pra empresas as Hinode, Totvs e B8one</li>
             <li>Ganha a vida como programadora</li>
             <li>+6 mil seguidores no Linkedin</li>
           </ul>
@@ -159,7 +150,7 @@ export default function LP({ setIsNoBlog }: LPProps) {
           <Image src={vaga5Image} alt="" />
         </section>
         <section className={`${styles.modules__container} ${styles.container}`}>
-          <h2 className={styles.modules__header}>Módulos</h2>
+          <h2 className={styles.modules__header}>Módulos do Curso</h2>
 
           <div className={styles.modules__body}>
             <div className={styles.modules__item}>
