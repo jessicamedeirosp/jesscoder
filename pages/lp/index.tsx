@@ -22,6 +22,7 @@ import vaga5Image from "../../assets/vaga5.png";
 import { Dispatch, SetStateAction, useEffect } from "react";
 import Image from "next/image";
 import { QuestionItem } from "../../components/questionItem";
+import { WhatsButton } from "../../components/whatsappButton";
 export interface LPProps {
   setIsNoBlog: Dispatch<SetStateAction<boolean>>;
 }
@@ -257,6 +258,13 @@ export default function LP({ setIsNoBlog }: LPProps) {
         </section>
       </div>
       <footer className={styles.footer__container}>
+        <WhatsButton />
+        <div className={styles.container}>
+          <p>
+            CNPJ: 45.874.164/0001-86 | JESSICA MEDEIROS POCARLI LTDA
+            <br /> Suporte: jesscoder2022@gmail.com | +55 (14) 998521149
+          </p>
+        </div>
         <div className={styles.container}>
           <p>
             &copy; 2024 Desenvolvido por Jess.Coder. Todos os Direitos
