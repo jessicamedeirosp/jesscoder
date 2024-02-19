@@ -42,7 +42,7 @@ export default function LP({ setIsNoBlog }: LPProps) {
     },
     {
       name: "Formas de pagamento",
-      resp: "Oferecemos opções de pagamento via cartão de crédito, boleto ou Pix.",
+      resp: "Oferecemos opções de pagamento via cartão de crédito, boleto, pix, paypal, dois cartões ou cartão virtual caixa.",
     },
     {
       name: "Existe certificado?",
@@ -54,7 +54,7 @@ export default function LP({ setIsNoBlog }: LPProps) {
     },
     {
       name: "Qual é o valor do curso?",
-      resp: "Parcelado em 12x de R$ 29,99 ou pagamento à vista de R$ 359,88.",
+      resp: "Parcelado em 12x de R$ 30,00 ou pagamento à vista de R$ 360,00.",
     },
     {
       name: "Como faço para acessar o curso?",
