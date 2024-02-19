@@ -11,7 +11,7 @@ import { pageview } from "../lib/gtag";
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const [theme, setTheme] = useState("light");
-  const [isNoBlog, setIsNoBlog] = useState(true);
+  const [isNoBlog, setIsNoBlog] = useState(false);
   useEffect(() => {
     const handleRouteChange = (url: string) => {
       pageview(url);
