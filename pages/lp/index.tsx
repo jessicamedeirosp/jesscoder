@@ -76,21 +76,15 @@ export default function LP({ setIsNoBlog }: LPProps) {
         <section className={styles.video__container}>
           <div className={styles.container}>
             <Image src={logoBrancoImage} alt="minha primeira vaga tech" />
+
             <iframe
               width="660"
               height="415"
-              src="https://www.youtube.com/embed/x6BnP1ksYFE?si=DXQK5HY7K4DBWa8N"
+              src="https://www.youtube.com/embed/YVuvUnBCr9o?autoplay=1&controls=0"
               title="Minha Primeira Vaga tech"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
-            {/* <iframe
-              width="660"
-              height="415"
-              src="https://www.youtube.com/embed/OmKpz-Wi2Zs?si=SmkFnosfwFfLwAuF"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            ></iframe> */}
             <a
               href="https://pay.hotmart.com/X90322730L"
               className={styles.video__button}
