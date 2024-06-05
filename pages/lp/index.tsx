@@ -71,6 +71,7 @@ export default function LP({ setIsNoBlog }: LPProps) {
   }, [setIsNoBlog]);
 
   return (
+    
     <div className={styles.lp}>
       <div>
         <section className={styles.video__container}>
@@ -85,12 +86,15 @@ export default function LP({ setIsNoBlog }: LPProps) {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
-            <a
+            <a href="#"  className={styles.video__button__close}>
+              Turma fechada no momento
+            </a>
+            {/* <a
               href="https://pay.hotmart.com/X90322730L"
               className={styles.video__button}
             >
               Conseguir Minha Primeira Vaga Tech
-            </a>
+            </a> */}
           </div>
         </section>
         <section
