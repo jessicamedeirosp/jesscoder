@@ -7,7 +7,7 @@ interface IProps {
 export function Post({ post }: IProps) {
   const { slug, updatedAt, title, excerpt } = post;
   return (
-    <Link key={slug} href={`/blog/${slug}`}>
+    <Link key={slug} href={`/posts/${slug}`}>
       <div className={styles.post}>
         <h2 className={styles.post__title}>{title}</h2>
         <p className={styles.post__text}>{excerpt}</p>
